@@ -17,7 +17,7 @@ jobs:
         working-directory: ./my-agora-states-client
       - name: SHOW AWS CLI VERSION
         run: |
-          bash
+          aws --version
       - name: Sync Bucket
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
